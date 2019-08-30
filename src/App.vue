@@ -10,6 +10,7 @@
 
     <!-- 悬浮控件 -->
     <a-row type="flex" justify="space-between" style="padding-top:15px; padding-left:20px; ">
+
       <a-popover trigger="click" title="设置" placement="bottomRight" style="max-width:240px">
         
         <div class="myBtn" style="width:40px; height:40px;">
@@ -26,8 +27,12 @@
             <a-radio :value="1">暗色底图</a-radio>
             <a-radio :value="2">Google地图</a-radio>
           </a-radio-group>
+
+
         </template>
       </a-popover>
+
+
     </a-row>
     
   </div>
@@ -44,14 +49,6 @@ export default {
   data () {
     return {
       selectedMap: 1,
-      show: {
-        mode: 1,
-        hisLength: 180,
-        freq: 200,
-        planeNumber: 20
-      },
-      loading: false,
-      drawing: false,
     }
   },
   methods: {

@@ -128,6 +128,8 @@ export default {
     let layersArray = map.getLayers();
     layersArray.insertAt(1, wmtsLayer);
 
+    
+
   },
 }
 </script>
